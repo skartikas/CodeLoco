@@ -84,4 +84,4 @@ aiming for at least 3-4 modules, want each module to contain at least ~ (an hour
 
 ### [BONUS] Digital Wireframes & Mockups
 
-
+![](database_model.svg)
