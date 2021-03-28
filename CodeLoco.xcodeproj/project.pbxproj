@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		538597692610FBC10052796A /* CodeLocoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538597682610FBC10052796A /* CodeLocoApp.swift */; };
+		5385976B2610FBC10052796A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5385976A2610FBC10052796A /* ContentView.swift */; };
+		5385976D2610FBC30052796A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5385976C2610FBC30052796A /* Assets.xcassets */; };
+		538597702610FBC30052796A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5385976F2610FBC30052796A /* Preview Assets.xcassets */; };
+		5385977B2610FBC30052796A /* CodeLocoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5385977A2610FBC30052796A /* CodeLocoTests.swift */; };
+		538597862610FBC30052796A /* CodeLocoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538597852610FBC30052796A /* CodeLocoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		538597772610FBC30052796A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5385975D2610FBC10052796A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 538597642610FBC10052796A;
+			remoteInfo = CodeLoco;
+		};
+		538597822610FBC30052796A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5385975D2610FBC10052796A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 538597642610FBC10052796A;
+			remoteInfo = CodeLoco;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		538597652610FBC10052796A /* CodeLoco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeLoco.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		538597682610FBC10052796A /* CodeLocoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeLocoApp.swift; sourceTree = "<group>"; };
+		5385976A2610FBC10052796A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5385976C2610FBC30052796A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5385976F2610FBC30052796A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		538597712610FBC30052796A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		538597762610FBC30052796A /* CodeLocoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeLocoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5385977A2610FBC30052796A /* CodeLocoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeLocoTests.swift; sourceTree = "<group>"; };
+		5385977C2610FBC30052796A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		538597812610FBC30052796A /* CodeLocoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeLocoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		538597852610FBC30052796A /* CodeLocoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeLocoUITests.swift; sourceTree = "<group>"; };
+		538597872610FBC30052796A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		538597622610FBC10052796A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		538597732610FBC30052796A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5385977E2610FBC30052796A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5385975C2610FBC10052796A = {
+			isa = PBXGroup;
+			children = (
+				538597672610FBC10052796A /* CodeLoco */,
+				538597792610FBC30052796A /* CodeLocoTests */,
+				538597842610FBC30052796A /* CodeLocoUITests */,
+				538597662610FBC10052796A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		538597662610FBC10052796A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				538597652610FBC10052796A /* CodeLoco.app */,
+				538597762610FBC30052796A /* CodeLocoTests.xctest */,
+				538597812610FBC30052796A /* CodeLocoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		538597672610FBC10052796A /* CodeLoco */ = {
+			isa = PBXGroup;
+			children = (
+				538597682610FBC10052796A /* CodeLocoApp.swift */,
+				5385976A2610FBC10052796A /* ContentView.swift */,
+				5385976C2610FBC30052796A /* Assets.xcassets */,
+				538597712610FBC30052796A /* Info.plist */,
+				5385976E2610FBC30052796A /* Preview Content */,
+			);
+			path = CodeLoco;
+			sourceTree = "<group>";
+		};
+		5385976E2610FBC30052796A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5385976F2610FBC30052796A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		538597792610FBC30052796A /* CodeLocoTests */ = {
+			isa = PBXGroup;
+			children = (
+				5385977A2610FBC30052796A /* CodeLocoTests.swift */,
+				5385977C2610FBC30052796A /* Info.plist */,
+			);
+			path = CodeLocoTests;
+			sourceTree = "<group>";
+		};
+		538597842610FBC30052796A /* CodeLocoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				538597852610FBC30052796A /* CodeLocoUITests.swift */,
+				538597872610FBC30052796A /* Info.plist */,
+			);
+			path = CodeLocoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		538597642610FBC10052796A /* CodeLoco */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5385978A2610FBC40052796A /* Build configuration list for PBXNativeTarget "CodeLoco" */;
+			buildPhases = (
+				538597612610FBC10052796A /* Sources */,
+				538597622610FBC10052796A /* Frameworks */,
+				538597632610FBC10052796A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CodeLoco;
+			productName = CodeLoco;
+			productReference = 538597652610FBC10052796A /* CodeLoco.app */;
+			productType = "com.apple.product-type.application";
+		};
+		538597752610FBC30052796A /* CodeLocoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5385978D2610FBC40052796A /* Build configuration list for PBXNativeTarget "CodeLocoTests" */;
+			buildPhases = (
+				538597722610FBC30052796A /* Sources */,
+				538597732610FBC30052796A /* Frameworks */,
+				538597742610FBC30052796A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				538597782610FBC30052796A /* PBXTargetDependency */,
+			);
+			name = CodeLocoTests;
+			productName = CodeLocoTests;
+			productReference = 538597762610FBC30052796A /* CodeLocoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		538597802610FBC30052796A /* CodeLocoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 538597902610FBC40052796A /* Build configuration list for PBXNativeTarget "CodeLocoUITests" */;
+			buildPhases = (
+				5385977D2610FBC30052796A /* Sources */,
+				5385977E2610FBC30052796A /* Frameworks */,
+				5385977F2610FBC30052796A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				538597832610FBC30052796A /* PBXTargetDependency */,
+			);
+			name = CodeLocoUITests;
+			productName = CodeLocoUITests;
+			productReference = 538597812610FBC30052796A /* CodeLocoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5385975D2610FBC10052796A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					538597642610FBC10052796A = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					538597752610FBC30052796A = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 538597642610FBC10052796A;
+					};
+					538597802610FBC30052796A = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 538597642610FBC10052796A;
+					};
+				};
+			};
+			buildConfigurationList = 538597602610FBC10052796A /* Build configuration list for PBXProject "CodeLoco" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5385975C2610FBC10052796A;
+			productRefGroup = 538597662610FBC10052796A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				538597642610FBC10052796A /* CodeLoco */,
+				538597752610FBC30052796A /* CodeLocoTests */,
+				538597802610FBC30052796A /* CodeLocoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		538597632610FBC10052796A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				538597702610FBC30052796A /* Preview Assets.xcassets in Resources */,
+				5385976D2610FBC30052796A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		538597742610FBC30052796A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5385977F2610FBC30052796A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		538597612610FBC10052796A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5385976B2610FBC10052796A /* ContentView.swift in Sources */,
+				538597692610FBC10052796A /* CodeLocoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		538597722610FBC30052796A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5385977B2610FBC30052796A /* CodeLocoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5385977D2610FBC30052796A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				538597862610FBC30052796A /* CodeLocoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		538597782610FBC30052796A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 538597642610FBC10052796A /* CodeLoco */;
+			targetProxy = 538597772610FBC30052796A /* PBXContainerItemProxy */;
+		};
+		538597832610FBC30052796A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 538597642610FBC10052796A /* CodeLoco */;
+			targetProxy = 538597822610FBC30052796A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		538597882610FBC40052796A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		538597892610FBC40052796A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5385978B2610FBC40052796A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"CodeLoco/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CodeLoco/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.CodeLoco;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5385978C2610FBC40052796A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"CodeLoco/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CodeLoco/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.CodeLoco;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5385978E2610FBC40052796A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CodeLocoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.CodeLocoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodeLoco.app/CodeLoco";
+			};
+			name = Debug;
+		};
+		5385978F2610FBC40052796A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CodeLocoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.CodeLocoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodeLoco.app/CodeLoco";
+			};
+			name = Release;
+		};
+		538597912610FBC40052796A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CodeLocoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.CodeLocoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CodeLoco;
+			};
+			name = Debug;
+		};
+		538597922610FBC40052796A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CodeLocoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.CodeLocoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CodeLoco;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		538597602610FBC10052796A /* Build configuration list for PBXProject "CodeLoco" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				538597882610FBC40052796A /* Debug */,
+				538597892610FBC40052796A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5385978A2610FBC40052796A /* Build configuration list for PBXNativeTarget "CodeLoco" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5385978B2610FBC40052796A /* Debug */,
+				5385978C2610FBC40052796A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5385978D2610FBC40052796A /* Build configuration list for PBXNativeTarget "CodeLocoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5385978E2610FBC40052796A /* Debug */,
+				5385978F2610FBC40052796A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		538597902610FBC40052796A /* Build configuration list for PBXNativeTarget "CodeLocoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				538597912610FBC40052796A /* Debug */,
+				538597922610FBC40052796A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5385975D2610FBC10052796A /* Project object */;
+}
