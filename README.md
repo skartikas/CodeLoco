@@ -111,15 +111,20 @@ aiming for at least 3-4 modules, want each module to contain at least ~ (an hour
 **Login page** 
 - Login - [Post] - Auth, post username/email and password
 - Sign Up - [Post] - Auth - post username, email and password
+
 **Modules page**
 - Display modules - [Get] - Get all modules in an array
+
 **Profile page**
 - Display profile - [Get] - Get username, level and total points
 - Edit profile - [Post] - Post edited username, email or password
+
 **Achievements page**
 - Display Achievements - [Get] - Get progress, level and total points
+
 **Available Lessons page**
 - Display Lessons/progress - [Get] - Get specific module, title, and description
+
 **Lesson page**
 - Display Lesson - [Get] - Get specific questions with title and choices
 - Send answer - [Post] - Post answer to questions
