@@ -82,7 +82,9 @@ aiming for at least 3-4 modules, want each module to contain at least ~ (an hour
 <img src="https://i.gyazo.com/57901da83dec537fdf40daf171aefe66.png" width=600>
 <img src="https://i.gyazo.com/3b15d571ea1a5a5a35c62f579b312d12.png" width=600>
 
+
 ### [BONUS] Digital Wireframes & Mockups
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fmh1GEgnwCGXEKJIT3YZ9Np%2FWireFrame%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
 
 ![](database_model.svg)
 
