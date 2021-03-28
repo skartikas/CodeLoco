@@ -85,3 +85,42 @@ aiming for at least 3-4 modules, want each module to contain at least ~ (an hour
 ### [BONUS] Digital Wireframes & Mockups
 
 ![](database_model.svg)
+
+## Schema 
+### Models
+#### Post
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | username      | String   | username of the user - used to login |
+   | email         | String   | email of the user - used to login |
+   | password      | String   | password of the user - used to login |
+   | progress      | Dictionary | dictionary that contains module progress of the user in each programming language, includes languges, last module question keys |
+   | level         | Number   | numeric level of the user that is based on total points |
+   | totalPoints   | Number   | numeric value of points gained by completeting modules |
+   | title         | String   | title of a module of a certain programming language |
+   | description   | String   | description of a module of a certain programming language |
+   | language      | String   | type of language of a module |
+   | points        | Number   | numeric value of points a module can give |
+   | Questions     | Dictionary | dictionary that holds all questions for a module, includes difficulty, choices, description, hint, answer, and points keys |
+   | createdAt     | DateTime | date when post is created (default field) |
+   | updatedAt     | DateTime | date when post is last updated (default field) |
+   
+### Networking
+#### List of network requests by screen
+**Login page** 
+- Login - [Post] - Auth, post username/email and password
+- Sign Up - [Post] - Auth - post username, email and password
+**Modules page**
+- Display modules - [Get] - Get all modules in an array
+**Profile page**
+- Display profile - [Get] - Get username, level and total points
+- Edit profile - [Post] - Post edited username, email or password
+**Achievements page**
+- Display Achievements - [Get] - Get progress, level and total points
+**Available Lessons page**
+- Display Lessons/progress - [Get] - Get specific module, title, and description
+**Lesson page**
+- Display Lesson - [Get] - Get specific questions with title and choices
+- Send answer - [Post] - Post answer to questions
+- Confirm answer - [Get] Send and confirm probably both be covered by post
