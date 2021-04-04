@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F136FB9261A3360006C3A16 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F136FB8261A3360006C3A16 /* SignUpViewController.swift */; };
 		0F4E149726192DB300BBEDE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4E149626192DB300BBEDE4 /* AppDelegate.swift */; };
 		0F4E149926192DB300BBEDE4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4E149826192DB300BBEDE4 /* SceneDelegate.swift */; };
 		0F4E149E26192DB300BBEDE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F4E149C26192DB300BBEDE4 /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		0BEB16CCABACC849183BB3E7 /* Pods-CodeLocoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeLocoTests.debug.xcconfig"; path = "Target Support Files/Pods-CodeLocoTests/Pods-CodeLocoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0F136FB8261A3360006C3A16 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		0F4E149326192DB200BBEDE4 /* CodeLoco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeLoco.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F4E149626192DB300BBEDE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F4E149826192DB300BBEDE4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				0F4E14DA2619339D00BBEDE4 /* LoginViewController.swift */,
 				0F4E14DF261933D200BBEDE4 /* HomeViewController.swift */,
 				5364898B26194FAF00AB5BFF /* ProfileViewController.swift */,
+				0F136FB8261A3360006C3A16 /* SignUpViewController.swift */,
 			);
 			path = CodeLoco;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F136FB9261A3360006C3A16 /* SignUpViewController.swift in Sources */,
 				0F4E14DB2619339D00BBEDE4 /* LoginViewController.swift in Sources */,
 				0F4E149726192DB300BBEDE4 /* AppDelegate.swift in Sources */,
 				5364898C26194FAF00AB5BFF /* ProfileViewController.swift in Sources */,
