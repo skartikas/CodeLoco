@@ -166,7 +166,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dhh-ua-6hp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1747.826086956522" y="93.75"/>
+            <point key="canvasLocation" x="1748" y="94"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="JXj-Cw-daz">
@@ -397,7 +397,7 @@
                         <outlet property="lastNameField" destination="cmG-iW-2IR" id="He9-4u-x9g"/>
                         <outlet property="passwordField" destination="18q-yl-B2d" id="sil-o4-zu7"/>
                         <outlet property="usernameField" destination="NIo-uz-bRk" id="ri8-Fy-8oN"/>
-                        <segue destination="HMc-ft-km6" kind="presentation" identifier="postSignup" id="ST3-fD-jSa"/>
+                        <segue destination="1DT-c1-vB0" kind="presentation" identifier="signupSegue" id="4kO-5V-saE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rEr-qd-l3c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -425,7 +425,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ST3-fD-jSa"/>
+        <segue reference="4kO-5V-saE"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="module_image_1(1)" width="551" height="310"/>
