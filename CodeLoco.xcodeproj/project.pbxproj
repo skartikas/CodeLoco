@@ -3,18 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0F4E149726192DB300BBEDE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4E149626192DB300BBEDE4 /* AppDelegate.swift */; };
 		0F4E149926192DB300BBEDE4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4E149826192DB300BBEDE4 /* SceneDelegate.swift */; };
-		0F4E149B26192DB300BBEDE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4E149A26192DB300BBEDE4 /* ViewController.swift */; };
 		0F4E149E26192DB300BBEDE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F4E149C26192DB300BBEDE4 /* Main.storyboard */; };
 		0F4E14A026192DB300BBEDE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F4E149F26192DB300BBEDE4 /* Assets.xcassets */; };
 		0F4E14A326192DB300BBEDE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F4E14A126192DB300BBEDE4 /* LaunchScreen.storyboard */; };
 		0F4E14AE26192DB300BBEDE4 /* CodeLocoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4E14AD26192DB300BBEDE4 /* CodeLocoTests.swift */; };
 		0F4E14B926192DB300BBEDE4 /* CodeLocoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4E14B826192DB300BBEDE4 /* CodeLocoUITests.swift */; };
+		0F4E14DB2619339D00BBEDE4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4E14DA2619339D00BBEDE4 /* LoginViewController.swift */; };
+		0F4E14E0261933D200BBEDE4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4E14DF261933D200BBEDE4 /* HomeViewController.swift */; };
 		519223EC62095FCCF5E14EDB /* Pods_CodeLoco.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8690A48AD790798C3E91C520 /* Pods_CodeLoco.framework */; };
 		617A38CCD4A3FD7C3DC3AF58 /* Pods_CodeLoco_CodeLocoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1156DED59D258078AD4EAA23 /* Pods_CodeLoco_CodeLocoUITests.framework */; };
 		8B7C4BB971FAF6A9156ADEB1 /* Pods_CodeLocoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 706941E992AF9843FAD7DDB8 /* Pods_CodeLocoTests.framework */; };
@@ -42,7 +43,6 @@
 		0F4E149326192DB200BBEDE4 /* CodeLoco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeLoco.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F4E149626192DB300BBEDE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F4E149826192DB300BBEDE4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0F4E149A26192DB300BBEDE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0F4E149D26192DB300BBEDE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0F4E149F26192DB300BBEDE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F4E14A226192DB300BBEDE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +53,8 @@
 		0F4E14B426192DB300BBEDE4 /* CodeLocoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeLocoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F4E14B826192DB300BBEDE4 /* CodeLocoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeLocoUITests.swift; sourceTree = "<group>"; };
 		0F4E14BA26192DB300BBEDE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F4E14DA2619339D00BBEDE4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0F4E14DF261933D200BBEDE4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1156DED59D258078AD4EAA23 /* Pods_CodeLoco_CodeLocoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeLoco_CodeLocoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32EAAABCD2CF0B98240F67C6 /* Pods-CodeLoco.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeLoco.debug.xcconfig"; path = "Target Support Files/Pods-CodeLoco/Pods-CodeLoco.debug.xcconfig"; sourceTree = "<group>"; };
 		456AA2A20C4DA5B1D095D148 /* Pods-CodeLoco-CodeLocoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeLoco-CodeLocoUITests.debug.xcconfig"; path = "Target Support Files/Pods-CodeLoco-CodeLocoUITests/Pods-CodeLoco-CodeLocoUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -118,11 +120,12 @@
 			children = (
 				0F4E149626192DB300BBEDE4 /* AppDelegate.swift */,
 				0F4E149826192DB300BBEDE4 /* SceneDelegate.swift */,
-				0F4E149A26192DB300BBEDE4 /* ViewController.swift */,
 				0F4E149C26192DB300BBEDE4 /* Main.storyboard */,
 				0F4E149F26192DB300BBEDE4 /* Assets.xcassets */,
 				0F4E14A126192DB300BBEDE4 /* LaunchScreen.storyboard */,
 				0F4E14A426192DB300BBEDE4 /* Info.plist */,
+				0F4E14DA2619339D00BBEDE4 /* LoginViewController.swift */,
+				0F4E14DF261933D200BBEDE4 /* HomeViewController.swift */,
 			);
 			path = CodeLoco;
 			sourceTree = "<group>";
@@ -155,7 +158,6 @@
 				0BEB16CCABACC849183BB3E7 /* Pods-CodeLocoTests.debug.xcconfig */,
 				F1BC3FBB933646BE5E429FD7 /* Pods-CodeLocoTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -407,9 +409,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F4E149B26192DB300BBEDE4 /* ViewController.swift in Sources */,
+				0F4E14DB2619339D00BBEDE4 /* LoginViewController.swift in Sources */,
 				0F4E149726192DB300BBEDE4 /* AppDelegate.swift in Sources */,
 				0F4E149926192DB300BBEDE4 /* SceneDelegate.swift in Sources */,
+				0F4E14E0261933D200BBEDE4 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
