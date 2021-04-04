@@ -1,6 +1,3 @@
-Original App Design Project - README Template
-===
-
 # CodeLoco
 
 ## Table of Contents
@@ -37,11 +34,11 @@ Original App Design Project - README Template
 
 **Optional Nice-to-have Stories**
 
-* hackerrank-esque challenges
-* Achievements
-* graphics/animations (made by us for more specifics)
-* Settings in profile for different display modes dark mode, text size, etc.
-* Friends tab *much later if anything for helping grow userbase*
+- [ ] hackerrank-esque challenges
+- [ ] Achievements
+- [ ] graphics/animations (made by us for more specifics)
+- [ ] Settings in profile for different display modes dark mode, text size, etc.
+- [ ] Friends tab *much later if anything for helping grow userbase*
 
 ### 2. Screen Archetypes
 
