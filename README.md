@@ -83,11 +83,11 @@
 ### [BONUS] Digital Wireframes & Mockups
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fmh1GEgnwCGXEKJIT3YZ9Np%2FWireFrame%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
 
-![](database_model.svg)
+![](readme_assets/database_model.svg)
 
 ## Schema 
 ### Models
-![](milestone-1.gif)
+![](readme_assets/milestone-1.gif)
 #### Post
 
    | Property      | Type     | Description |
