@@ -7,6 +7,7 @@
 
 import UIKit
 import Parse
+import AlamofireImage
 
 class ProfileViewController: UIViewController {
 
@@ -31,8 +32,6 @@ class ProfileViewController: UIViewController {
             var joined = getAge(date: createdAt)
             usernameLabel.text = currentUser?.username
             joinedLabel.text = "Joined " + joined
-            
-            
         } else {
           // Show the signup or login screen
         }
