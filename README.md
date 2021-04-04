@@ -90,6 +90,7 @@ aiming for at least 3-4 modules, want each module to contain at least ~ (an hour
 
 ## Schema 
 ### Models
+![](milestone-1.gif)
 #### Post
 
    | Property      | Type     | Description |
