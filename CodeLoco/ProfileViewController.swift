@@ -25,16 +25,7 @@ class ProfileViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        let currentUser = PFUser.current()
-        if currentUser != nil {
-          // Do stuff with the user
-            var createdAt = (currentUser?.createdAt)! as Date
-            var joined = getAge(date: createdAt)
-            usernameLabel.text = currentUser?.username
-            joinedLabel.text = "Joined " + joined
-        } else {
-          // Show the signup or login screen
-        }
+        setFields()
     }
     
     func getAge(date: Date) -> String {
@@ -44,6 +35,27 @@ class ProfileViewController: UIViewController {
         return string
     }
 
+    func setFields(){
+        let currentUser = PFUser.current()
+        if currentUser != nil {
+            let createdAt = (currentUser?.createdAt)! as Date
+            let joined = getAge(date: createdAt)
+
+            if currentUser!["profile_image"] != nil {
+                let imageFile = currentUser!["profile_image"] as! PFFileObject
+                let urlString = imageFile.url!
+                let url = URL(string: urlString)!
+                profileImage.af_setImage(withURL: url)
+            }
+            else {
+                print("USER DID NOT SET PROFILE IMAGE")
+            }
+        
+            usernameLabel.text = currentUser?.username
+            joinedLabel.text = "Joined " + joined
+            
+        }
+    }
     /*
     // MARK: - Navigation
 

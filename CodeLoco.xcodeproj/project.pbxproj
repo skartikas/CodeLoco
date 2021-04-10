@@ -19,6 +19,7 @@
 		0F4E14E0261933D200BBEDE4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4E14DF261933D200BBEDE4 /* HomeViewController.swift */; };
 		519223EC62095FCCF5E14EDB /* Pods_CodeLoco.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8690A48AD790798C3E91C520 /* Pods_CodeLoco.framework */; };
 		5364898C26194FAF00AB5BFF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5364898B26194FAF00AB5BFF /* ProfileViewController.swift */; };
+		536E1CCA262202AA00BFFD0C /* ProfileSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536E1CC9262202AA00BFFD0C /* ProfileSettingsViewController.swift */; };
 		617A38CCD4A3FD7C3DC3AF58 /* Pods_CodeLoco_CodeLocoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1156DED59D258078AD4EAA23 /* Pods_CodeLoco_CodeLocoUITests.framework */; };
 		8B7C4BB971FAF6A9156ADEB1 /* Pods_CodeLocoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 706941E992AF9843FAD7DDB8 /* Pods_CodeLocoTests.framework */; };
 /* End PBXBuildFile section */
@@ -62,6 +63,7 @@
 		32EAAABCD2CF0B98240F67C6 /* Pods-CodeLoco.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeLoco.debug.xcconfig"; path = "Target Support Files/Pods-CodeLoco/Pods-CodeLoco.debug.xcconfig"; sourceTree = "<group>"; };
 		456AA2A20C4DA5B1D095D148 /* Pods-CodeLoco-CodeLocoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeLoco-CodeLocoUITests.debug.xcconfig"; path = "Target Support Files/Pods-CodeLoco-CodeLocoUITests/Pods-CodeLoco-CodeLocoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5364898B26194FAF00AB5BFF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		536E1CC9262202AA00BFFD0C /* ProfileSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingsViewController.swift; sourceTree = "<group>"; };
 		706941E992AF9843FAD7DDB8 /* Pods_CodeLocoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeLocoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8690A48AD790798C3E91C520 /* Pods_CodeLoco.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeLoco.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A52AA80C8489724FEB742730 /* Pods-CodeLoco.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeLoco.release.xcconfig"; path = "Target Support Files/Pods-CodeLoco/Pods-CodeLoco.release.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				0F4E14DF261933D200BBEDE4 /* HomeViewController.swift */,
 				5364898B26194FAF00AB5BFF /* ProfileViewController.swift */,
 				0F136FB8261A3360006C3A16 /* SignUpViewController.swift */,
+				536E1CC9262202AA00BFFD0C /* ProfileSettingsViewController.swift */,
 			);
 			path = CodeLoco;
 			sourceTree = "<group>";
@@ -418,6 +421,7 @@
 				0F136FB9261A3360006C3A16 /* SignUpViewController.swift in Sources */,
 				0F4E14DB2619339D00BBEDE4 /* LoginViewController.swift in Sources */,
 				0F4E149726192DB300BBEDE4 /* AppDelegate.swift in Sources */,
+				536E1CCA262202AA00BFFD0C /* ProfileSettingsViewController.swift in Sources */,
 				5364898C26194FAF00AB5BFF /* ProfileViewController.swift in Sources */,
 				0F4E149926192DB300BBEDE4 /* SceneDelegate.swift in Sources */,
 				0F4E14E0261933D200BBEDE4 /* HomeViewController.swift in Sources */,

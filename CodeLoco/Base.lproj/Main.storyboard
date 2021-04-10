@@ -259,10 +259,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tVY-sc-ZPi">
+                                <rect key="frame" x="372" y="7" width="22" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button" image="gearshape" catalog="system"/>
+                                <connections>
+                                    <segue destination="P9c-9j-eqf" kind="presentation" id="VAz-vp-iga"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="e9z-Xg-NU6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="hrG-C9-gZG"/>
                     <connections>
                         <outlet property="joinedLabel" destination="blh-D9-OK5" id="hkW-Ni-ac1"/>
                         <outlet property="profileImage" destination="OE2-78-mvT" id="0dx-OG-3ck"/>
@@ -271,7 +282,49 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uz5-oP-XV8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2693" y="94"/>
+            <point key="canvasLocation" x="2692.753623188406" y="93.75"/>
+        </scene>
+        <!--Profile Settings View Controller-->
+        <scene sceneID="VFM-mn-qpy">
+            <objects>
+                <viewController id="P9c-9j-eqf" customClass="ProfileSettingsViewController" customModule="CodeLoco" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ajb-wG-oTA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oXp-tF-GrT">
+                                <rect key="frame" x="87" y="95" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.6717247717" green="0.6717247717" blue="0.6717247717" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="uj1-MA-69N" appends="YES" id="1hF-Rf-gVx"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HUp-Rn-YCl">
+                                <rect key="frame" x="158" y="532" width="98" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save Changes"/>
+                                <connections>
+                                    <action selector="onSubmit:" destination="P9c-9j-eqf" eventType="touchUpInside" id="0zJ-Pf-kfG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BGI-Dj-OpO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="oXp-tF-GrT" id="kqU-yr-JSq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5x7-Xd-qzA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="uj1-MA-69N">
+                    <connections>
+                        <action selector="onCameraButton:" destination="P9c-9j-eqf" id="LtX-ci-LZi"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="3465" y="94"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lLj-63-vTS">
@@ -428,6 +481,7 @@
         <segue reference="4kO-5V-saE"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="gearshape" catalog="system" width="128" height="121"/>
         <image name="module_image_1(1)" width="551" height="310"/>
         <image name="module_image_2(1)" width="720" height="695"/>
         <image name="module_image_3(1)" width="584" height="570"/>
