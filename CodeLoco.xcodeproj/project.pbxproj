@@ -22,6 +22,8 @@
 		536E1CCA262202AA00BFFD0C /* ProfileSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536E1CC9262202AA00BFFD0C /* ProfileSettingsViewController.swift */; };
 		617A38CCD4A3FD7C3DC3AF58 /* Pods_CodeLoco_CodeLocoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1156DED59D258078AD4EAA23 /* Pods_CodeLoco_CodeLocoUITests.framework */; };
 		8B7C4BB971FAF6A9156ADEB1 /* Pods_CodeLocoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 706941E992AF9843FAD7DDB8 /* Pods_CodeLocoTests.framework */; };
+		E57DD9BD262218EF00E7A2F5 /* ModuleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57DD9BC262218EF00E7A2F5 /* ModuleTableViewController.swift */; };
+		E57DD9C2262219F900E7A2F5 /* ModuleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57DD9C1262219F900E7A2F5 /* ModuleTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		8690A48AD790798C3E91C520 /* Pods_CodeLoco.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeLoco.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A52AA80C8489724FEB742730 /* Pods-CodeLoco.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeLoco.release.xcconfig"; path = "Target Support Files/Pods-CodeLoco/Pods-CodeLoco.release.xcconfig"; sourceTree = "<group>"; };
 		A8E8811F3DD23ECDABF5887B /* Pods-CodeLoco-CodeLocoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeLoco-CodeLocoUITests.release.xcconfig"; path = "Target Support Files/Pods-CodeLoco-CodeLocoUITests/Pods-CodeLoco-CodeLocoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E57DD9BC262218EF00E7A2F5 /* ModuleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleTableViewController.swift; sourceTree = "<group>"; };
+		E57DD9C1262219F900E7A2F5 /* ModuleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleTableViewCell.swift; sourceTree = "<group>"; };
 		F1BC3FBB933646BE5E429FD7 /* Pods-CodeLocoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeLocoTests.release.xcconfig"; path = "Target Support Files/Pods-CodeLocoTests/Pods-CodeLocoTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,6 +131,8 @@
 				0F4E149626192DB300BBEDE4 /* AppDelegate.swift */,
 				0F4E149826192DB300BBEDE4 /* SceneDelegate.swift */,
 				0F4E149C26192DB300BBEDE4 /* Main.storyboard */,
+				E57DD9C1262219F900E7A2F5 /* ModuleTableViewCell.swift */,
+				E57DD9BC262218EF00E7A2F5 /* ModuleTableViewController.swift */,
 				0F4E149F26192DB300BBEDE4 /* Assets.xcassets */,
 				0F4E14A126192DB300BBEDE4 /* LaunchScreen.storyboard */,
 				0F4E14A426192DB300BBEDE4 /* Info.plist */,
@@ -422,9 +428,11 @@
 				0F4E14DB2619339D00BBEDE4 /* LoginViewController.swift in Sources */,
 				0F4E149726192DB300BBEDE4 /* AppDelegate.swift in Sources */,
 				536E1CCA262202AA00BFFD0C /* ProfileSettingsViewController.swift in Sources */,
+				E57DD9C2262219F900E7A2F5 /* ModuleTableViewCell.swift in Sources */,
 				5364898C26194FAF00AB5BFF /* ProfileViewController.swift in Sources */,
 				0F4E149926192DB300BBEDE4 /* SceneDelegate.swift in Sources */,
 				0F4E14E0261933D200BBEDE4 /* HomeViewController.swift in Sources */,
+				E57DD9BD262218EF00E7A2F5 /* ModuleTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
