@@ -12,11 +12,27 @@ import Parse
 class ProfileSettingsViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
  
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var usernameField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let currentUser = PFUser.current()
+        if currentUser != nil {
+            usernameField.placeholder = currentUser!["username"] as! String
+            passwordField.placeholder = "New password"
+            
+            if currentUser!["profile_image"] != nil {
+                let imageFile = currentUser!["profile_image"] as! PFFileObject
+                let urlString = imageFile.url!
+                let url = URL(string: urlString)!
+                imageView.af_setImage(withURL: url)
+            }
+            
+        }
     }
     
     @IBAction func onSubmit(_ sender: Any) {
@@ -26,6 +42,13 @@ class ProfileSettingsViewController: UIViewController, UIImagePickerControllerDe
                     let file = PFFileObject(data: imageData!)
         
                     currentUser!["profile_image"] = file
+                    
+                    if usernameField.text != "" {
+                        currentUser!["username"] = usernameField.text as! String
+                    }
+                    if passwordField.text != "" {
+                        currentUser!["password"] = passwordField.text as! String
+                    }
         
                     currentUser?.saveInBackground{(success, error) in
                         if success{
