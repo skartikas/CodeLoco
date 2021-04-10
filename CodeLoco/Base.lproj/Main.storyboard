@@ -173,6 +173,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KCE-9T-97g">
+                                <rect key="frame" x="364" y="44" width="30" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="gearshape" catalog="system"/>
+                                <connections>
+                                    <segue destination="GAT-TO-xCr" kind="presentation" id="gm7-TE-iWK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="e9z-Xg-NU6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -186,7 +195,49 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uz5-oP-XV8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1274" y="815"/>
+            <point key="canvasLocation" x="1273.913043478261" y="814.95535714285711"/>
+        </scene>
+        <!--Profile Settings View Controller-->
+        <scene sceneID="WRh-Y3-neS">
+            <objects>
+                <viewController id="GAT-TO-xCr" customClass="ProfileSettingsViewController" customModule="CodeLoco" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yR5-58-Per">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9lN-rm-05R">
+                                <rect key="frame" x="87" y="108" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Nwz-qW-shE" appends="YES" id="OTK-vs-OtM"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P53-3M-ZSz">
+                                <rect key="frame" x="158" y="488" width="98" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save Changes"/>
+                                <connections>
+                                    <action selector="onSubmit:" destination="GAT-TO-xCr" eventType="touchUpInside" id="c8U-ec-Oq8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RNE-Ul-8Hq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="9lN-rm-05R" id="4m8-KG-LgW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IdR-hP-voU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Nwz-qW-shE">
+                    <connections>
+                        <action selector="onCameraButton:" destination="GAT-TO-xCr" id="h5i-1E-i3C"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1996" y="815"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="uSF-EM-tcA">
@@ -428,6 +479,7 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="book.fill" catalog="system" width="128" height="102"/>
+        <image name="gearshape" catalog="system" width="128" height="121"/>
         <image name="module_image_1(1)" width="551" height="310"/>
         <image name="module_image_2(1)" width="720" height="695"/>
         <image name="module_image_3(1)" width="584" height="570"/>
