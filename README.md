@@ -26,17 +26,18 @@
 **Required Must-have Stories**
 
 - [x] User logins/memory (remember where they left off)
-- [ ] main tab containing different modules of focus (introduction to coding basics, language specifics, OOP basics, big O, Sorting algos)
+- [ ] Main tab containing different modules of focus (introduction to coding basics, language specifics, OOP basics, big O, Sorting algos)
 - [ ] Each module has separate lessons to build up understanding (new screen once clicked)
-- [ ] aiming for at least 3-4 modules, want each module to contain at least ~ (an hour) of content
-- [ ] multiple choice quick checks on concepts addressed in lesson
-- [x] profile tab shows progress to this point (level up maybe?), account age, adjust account credentials
+- [ ] Aiming for at least 3-4 modules, want each module to contain at least ~ (an hour) of content
+- [ ] Multiple choice quick checks on concepts addressed in lesson
+- [x] Profile tab shows progress to this point (level up maybe?), account age, adjust account credentials
+- [x] Porfile settings to change picture, username and password.
 
 **Optional Nice-to-have Stories**
 
-- [ ] hackerrank-esque challenges
+- [ ] Hackerrank-esque challenges
 - [ ] Achievements
-- [ ] graphics/animations (made by us for more specifics)
+- [ ] Graphics/animations (made by us for more specifics)
 - [ ] Settings in profile for different display modes dark mode, text size, etc.
 - [ ] Friends tab *much later if anything for helping grow userbase*
 
