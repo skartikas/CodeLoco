@@ -90,6 +90,10 @@
 ## Schema 
 ### Models
 ![](readme_assets/milestone-1.gif)
+<img src="https://i.gyazo.com/6805d0a06c52a55e5f1df9ac6c9e59b0.gif" width=600>
+<img src="https://i.gyazo.com/5c5be659350ee1584b6aecb1300896dd.gif" width=600>
+<img src="https://i.gyazo.com/c2d1a1ef1a65412a19248e833214a6b0.gif" width=600>
+
 #### Post
 
    | Property      | Type     | Description |
