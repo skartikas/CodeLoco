@@ -141,8 +141,8 @@
 				0F4E14A426192DB300BBEDE4 /* Info.plist */,
 				0F4E14DA2619339D00BBEDE4 /* LoginViewController.swift */,
 				0F4E14DF261933D200BBEDE4 /* HomeViewController.swift */,
-				5364898B26194FAF00AB5BFF /* ProfileViewController.swift */,
 				0F136FB8261A3360006C3A16 /* SignUpViewController.swift */,
+				5364898B26194FAF00AB5BFF /* ProfileViewController.swift */,
 				536E1CC9262202AA00BFFD0C /* ProfileSettingsViewController.swift */,
 			);
 			path = CodeLoco;

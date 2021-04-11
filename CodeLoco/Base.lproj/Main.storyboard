@@ -11,7 +11,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="CodeLoco" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="CodeLoco" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -182,6 +182,14 @@
                                     <segue destination="GAT-TO-xCr" kind="presentation" id="gm7-TE-iWK"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fap-iN-opd">
+                                <rect key="frame" x="20" y="42" width="55" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Log Out"/>
+                                <connections>
+                                    <action selector="onLogoutBUtton:" destination="0Dk-6U-8pZ" eventType="touchUpInside" id="6Zo-oM-SDB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="e9z-Xg-NU6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -270,7 +278,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="uSF-EM-tcA">
             <objects>
-                <tabBarController modalPresentationStyle="fullScreen" id="0zy-dE-4fn" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="ModuleNavigationController" modalPresentationStyle="fullScreen" id="0zy-dE-4fn" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="04k-uE-6OT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
