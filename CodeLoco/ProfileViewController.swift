@@ -8,6 +8,7 @@
 import UIKit
 import Parse
 import AlamofireImage
+import NotificationBannerSwift
 
 class ProfileViewController: UIViewController {
 
@@ -26,6 +27,8 @@ class ProfileViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         setFields()
+        let banner = NotificationBanner(title: "Test popup title", subtitle: "Test popup subtitle", style: .success)
+        banner.show()
     }
     
     func getAge(date: Date) -> String {

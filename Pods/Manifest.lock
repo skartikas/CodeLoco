@@ -3,13 +3,19 @@ PODS:
   - AlamofireImage (4.1.0):
     - Alamofire (~> 5.1)
   - Bolts/Tasks (1.9.1)
+  - MarqueeLabel (4.0.5)
+  - NotificationBannerSwift (3.0.6):
+    - MarqueeLabel (~> 4.0.5)
+    - SnapKit (~> 5.0.1)
   - Parse (1.19.2):
     - Parse/Core (= 1.19.2)
   - Parse/Core (1.19.2):
     - Bolts/Tasks (= 1.9.1)
+  - SnapKit (5.0.1)
 
 DEPENDENCIES:
   - AlamofireImage
+  - NotificationBannerSwift (~> 3.0.0)
   - Parse
 
 SPEC REPOS:
@@ -17,14 +23,20 @@ SPEC REPOS:
     - Alamofire
     - AlamofireImage
     - Bolts
+    - MarqueeLabel
+    - NotificationBannerSwift
     - Parse
+    - SnapKit
 
 SPEC CHECKSUMS:
   Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
   AlamofireImage: c4a2ba349885fb3064feb74d2e547bd42ce9be10
   Bolts: 8c1e8aab2f603387b8b9924f57d1d64f43d3ffdc
+  MarqueeLabel: 00cc0bcd087111dca575878b3531af980559707d
+  NotificationBannerSwift: 7021be2338f8f29cf424b0aca43da462bf9e2a1a
   Parse: 081fb8755c3000fd11df817eec235def233d0af3
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: 5ae1e994685866791b65d992d876bf0011861786
+PODFILE CHECKSUM: 57acdab3c02748d38acfd72077fda9c2915597b6
 
 COCOAPODS: 1.10.1

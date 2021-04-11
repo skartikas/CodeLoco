@@ -8,6 +8,8 @@ target 'CodeLoco' do
   # Pods for CodeLoco
   pod 'AlamofireImage'
   pod 'Parse'
+  pod 'NotificationBannerSwift', '~> 3.0.0'
+
 
   target 'CodeLocoTests' do
     inherit! :search_paths
