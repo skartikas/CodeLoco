@@ -304,13 +304,9 @@
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQ6-G9-Ba2">
                                             <rect key="frame" x="44" y="50" width="140" height="140"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="140" id="Oob-T6-1rR"/>
-                                                <constraint firstAttribute="height" constant="140" id="j7k-hd-jga"/>
-                                            </constraints>
                                             <state key="normal" title="Button" image="module_image_1(1)"/>
                                             <connections>
-                                                <action selector="displayFirstModule:" destination="Cje-v7-8ME" eventType="touchUpInside" id="g1B-q3-bM8"/>
+                                                <segue destination="OP7-b9-5XV" kind="presentation" id="BRk-1H-iEV"/>
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMh-qL-4Co">
@@ -322,29 +318,26 @@
                                             <state key="normal" title="Button" image="module_image_2(1)"/>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r6O-Uf-jh7">
-                                            <rect key="frame" x="137" y="236" width="140" height="140"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="140" id="fQv-ia-Yqr"/>
-                                                <constraint firstAttribute="width" constant="140" id="vbS-B6-hqP"/>
-                                            </constraints>
+                                            <rect key="frame" x="137" y="236" width="140" height="158"/>
                                             <state key="normal" title="Button" image="module_image_3(1)"/>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l8m-BI-j0m">
-                                            <rect key="frame" x="230" y="50" width="140" height="140"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="140" id="936-3m-sZO"/>
-                                                <constraint firstAttribute="width" constant="140" id="dGp-pc-h2J"/>
-                                            </constraints>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l8m-BI-j0m">
+                                            <rect key="frame" x="230" y="50" width="120" height="136"/>
                                             <state key="normal" title="Button" image="module_image_2(1)"/>
                                         </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="r6O-Uf-jh7" firstAttribute="top" secondItem="DMh-qL-4Co" secondAttribute="bottom" constant="46" id="LzW-Og-nFE"/>
+                                        <constraint firstItem="l8m-BI-j0m" firstAttribute="top" secondItem="UD2-TG-i0L" secondAttribute="top" constant="50" id="Ry3-pw-dtl"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="l8m-BI-j0m" secondAttribute="trailing" constant="44" id="SbK-d0-eP6"/>
+                                        <constraint firstAttribute="bottom" secondItem="r6O-Uf-jh7" secondAttribute="bottom" constant="50" id="cJs-hi-CeM"/>
+                                        <constraint firstItem="r6O-Uf-jh7" firstAttribute="top" secondItem="l8m-BI-j0m" secondAttribute="bottom" constant="50" id="dWb-oV-ZBl"/>
                                         <constraint firstItem="DMh-qL-4Co" firstAttribute="top" secondItem="UD2-TG-i0L" secondAttribute="top" constant="50" id="did-d5-IxR"/>
                                         <constraint firstItem="r6O-Uf-jh7" firstAttribute="leading" secondItem="UD2-TG-i0L" secondAttribute="leading" constant="137" id="ggC-fp-Aue"/>
                                         <constraint firstItem="DMh-qL-4Co" firstAttribute="leading" secondItem="DQ6-G9-Ba2" secondAttribute="trailing" constant="46" id="lce-Bf-ViQ"/>
                                         <constraint firstItem="DQ6-G9-Ba2" firstAttribute="top" secondItem="UD2-TG-i0L" secondAttribute="top" constant="50" id="pzp-Ll-O9e"/>
                                         <constraint firstItem="r6O-Uf-jh7" firstAttribute="top" secondItem="DQ6-G9-Ba2" secondAttribute="bottom" constant="46" id="rfG-O5-q64"/>
+                                        <constraint firstItem="l8m-BI-j0m" firstAttribute="leading" secondItem="DQ6-G9-Ba2" secondAttribute="trailing" constant="46" id="s1A-1b-k9e"/>
                                         <constraint firstItem="DQ6-G9-Ba2" firstAttribute="leading" secondItem="UD2-TG-i0L" secondAttribute="leading" constant="44" id="ulQ-dT-SUy"/>
                                         <constraint firstAttribute="trailing" secondItem="r6O-Uf-jh7" secondAttribute="trailing" constant="137" id="vWY-Ub-aUu"/>
                                         <constraint firstAttribute="trailing" secondItem="DMh-qL-4Co" secondAttribute="trailing" constant="44" id="vrt-M7-5CW"/>
@@ -371,7 +364,7 @@
         <!--Table View Controller-->
         <scene sceneID="kVo-sq-Xqd">
             <objects>
-                <tableViewController id="OP7-b9-5XV" sceneMemberID="viewController">
+                <tableViewController modalPresentationStyle="fullScreen" id="OP7-b9-5XV" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="EFT-Oa-di0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

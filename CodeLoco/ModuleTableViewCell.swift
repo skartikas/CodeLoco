@@ -29,7 +29,4 @@ class ModuleTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    @IBAction func displayFirstModule(_ sender: Any) {
-    }
-    
 }
