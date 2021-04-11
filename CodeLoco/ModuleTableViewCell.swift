@@ -8,11 +8,12 @@
 import UIKit
 
 class ModuleTableViewCell: UITableViewCell {
-    @IBOutlet weak var firstModule: UIImageView!
+
+    @IBOutlet weak var firstModule: UIButton!
     
-    @IBOutlet weak var secondModule: UIImageView!
+    @IBOutlet weak var secondModule: UIButton!
     
-    @IBOutlet weak var thirdModule: UIImageView!
+    @IBOutlet weak var thirdModule: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -27,5 +28,8 @@ class ModuleTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    
+    @IBAction func displayFirstModule(_ sender: Any) {
+    }
+    
 }
