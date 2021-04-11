@@ -20,7 +20,7 @@ class ModuleTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
@@ -28,15 +28,24 @@ class ModuleTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return 2
     }
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "moduleBlock", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "moduleBlock") as! ModuleTableViewCell
 
         // Configure the cell...
-
+        let moduleNumber = 3*indexPath.row
+        cell.firstModule.layer.cornerRadius = 50
+        cell.secondModule.layer.cornerRadius = 50
+        cell.thirdModule.layer.cornerRadius = 50
+        let firstModuleNumber = moduleNumber + 1
+        let secondModuleNumber = moduleNumber + 2
+        let thirdModuleNumber = moduleNumber + 3
+        cell.firstModuleLabel.text = String(format: "%@%x", "Module ", firstModuleNumber)
+        cell.secondModuleLabel.text = String(format: "%@%x", "Module ", secondModuleNumber)
+        cell.thirdModuleLabel.text = String(format: "%@%x", "Module ", thirdModuleNumber)
         return cell
     }
 

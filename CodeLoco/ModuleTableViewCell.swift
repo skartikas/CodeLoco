@@ -14,13 +14,13 @@ class ModuleTableViewCell: UITableViewCell {
     @IBOutlet weak var secondModule: UIButton!
     
     @IBOutlet weak var thirdModule: UIButton!
+    @IBOutlet weak var firstModuleLabel: UILabel!
+    @IBOutlet weak var secondModuleLabel: UILabel!
     
+    @IBOutlet weak var thirdModuleLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        firstModule.layer.cornerRadius = 20
-        secondModule.layer.cornerRadius = 20
-        thirdModule.layer.cornerRadius = 20
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
