@@ -31,7 +31,8 @@
 - [ ] Aiming for at least 3-4 modules, want each module to contain at least ~ (an hour) of content
 - [ ] Multiple choice quick checks on concepts addressed in lesson
 - [x] Profile tab shows progress to this point (level up maybe?), account age, adjust account credentials
-- [x] Porfile settings to change picture, username and password.
+- [x] Profile settings to change picture, username and password.
+- [x] User can login, logout and stay logged in across restarts.
 
 **Optional Nice-to-have Stories**
 
