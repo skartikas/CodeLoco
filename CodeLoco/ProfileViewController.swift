@@ -12,6 +12,10 @@ import NotificationBannerSwift
 
 class ProfileViewController: UIViewController {
 
+    @IBOutlet weak var levelLabel: UILabel!
+    
+    @IBOutlet weak var nextLevelLabel: UILabel!
+    @IBOutlet weak var progressView: UIProgressView!
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var joinedLabel: UILabel!
     @IBOutlet weak var profileImage: UIImageView!
@@ -27,8 +31,6 @@ class ProfileViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         setFields()
-        let banner = NotificationBanner(title: "Test popup title", subtitle: "Test popup subtitle", style: .success)
-        banner.show()
     }
     
     func getAge(date: Date) -> String {
@@ -43,7 +45,10 @@ class ProfileViewController: UIViewController {
         if currentUser != nil {
             let createdAt = (currentUser?.createdAt)! as Date
             let joined = getAge(date: createdAt)
-
+            let level = currentUser!["level"] as! Int
+            let total_points = currentUser!["total_points"] as! Int
+            let next_level = (total_points % 100)
+            
             if currentUser!["profile_image"] != nil {
                 let imageFile = currentUser!["profile_image"] as! PFFileObject
                 let urlString = imageFile.url!
@@ -54,9 +59,16 @@ class ProfileViewController: UIViewController {
                 print("USER DID NOT SET PROFILE IMAGE")
             }
         
+            levelLabel.text = "Level \(String(level))"
+            //nextLevelLabel.text = "Level up in \(String(next_level)) points"
+            nextLevelLabel.text = "\(String(next_level + ((level - 1) * 100 )))/\(String(level * 100))"
             usernameLabel.text = currentUser?.username
             joinedLabel.text = "Joined " + joined
             
+            let prog = Float((total_points % 100)) / 100.0 as Float
+            print(prog)
+            self.progressView.setProgress(prog, animated: true)
+                
         }
     }
    

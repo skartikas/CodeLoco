@@ -113,13 +113,6 @@
                                 <rect key="frame" x="168" y="374.5" width="150" height="4"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </progressView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Level 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kPx-2k-QaE">
-                                <rect key="frame" x="107" y="366.5" width="52" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HLY-3Z-wNA">
                                 <rect key="frame" x="149" y="472" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -190,6 +183,20 @@
                                     <action selector="onLogoutBUtton:" destination="0Dk-6U-8pZ" eventType="touchUpInside" id="6Zo-oM-SDB"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWX-RD-DjG">
+                                <rect key="frame" x="171" y="351" width="147" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Level 1" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kPx-2k-QaE">
+                                <rect key="frame" x="71" y="366" width="88" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="e9z-Xg-NU6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -197,7 +204,10 @@
                     <navigationItem key="navigationItem" id="g0b-9E-GIo"/>
                     <connections>
                         <outlet property="joinedLabel" destination="blh-D9-OK5" id="hkW-Ni-ac1"/>
+                        <outlet property="levelLabel" destination="kPx-2k-QaE" id="8fO-Cg-5td"/>
+                        <outlet property="nextLevelLabel" destination="yWX-RD-DjG" id="KQD-mo-jQA"/>
                         <outlet property="profileImage" destination="OE2-78-mvT" id="0dx-OG-3ck"/>
+                        <outlet property="progressView" destination="etI-In-41Q" id="xjf-1n-2Xc"/>
                         <outlet property="usernameLabel" destination="bkv-c2-F5G" id="7k8-ag-tPX"/>
                     </connections>
                 </viewController>
