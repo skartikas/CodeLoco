@@ -59,6 +59,8 @@ class ProfileViewController: UIViewController {
                 print("USER DID NOT SET PROFILE IMAGE")
             }
         
+            print(level)
+            print(total_points)
             levelLabel.text = "Level \(String(level))"
             //nextLevelLabel.text = "Level up in \(String(next_level)) points"
             nextLevelLabel.text = "\(String(next_level + ((level - 1) * 100 )))/\(String(level * 100))"
