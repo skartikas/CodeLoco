@@ -22,7 +22,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             let moduleNavigationController = main.instantiateViewController(withIdentifier: "ModuleNavigationController")
             window?.rootViewController = moduleNavigationController
         }
-        
         guard let _ = (scene as? UIWindowScene) else { return }
     }
 

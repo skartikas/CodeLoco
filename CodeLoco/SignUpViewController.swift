@@ -7,6 +7,7 @@
 
 import UIKit
 import Parse
+import NotificationBannerSwift
 
 class SignUpViewController: UIViewController {
 
@@ -36,10 +37,13 @@ class SignUpViewController: UIViewController {
         
         user["First_Name"] = firstNameField.text
         user["Last_Name"] = lastNameField.text
+        user["total_points"] = 150
+        user["level"] = 0
             
         user.signUpInBackground { (success, error) in
             if success{
                 self.performSegue(withIdentifier: "signupSegue", sender: nil)
+                displayAchievement()
             } else{
                 print("Error")
             }
@@ -49,7 +53,28 @@ class SignUpViewController: UIViewController {
 }
     
     
-    
+
+func displayAchievement() {
+    let currentUser = PFUser.current()
+    if currentUser != nil {
+        let level = currentUser!["level"] as! Int
+        let total_points = currentUser!["total_points"] as! Int
+        
+        let calculated_level = total_points / 100
+        
+        if calculated_level != level {
+            let banner = NotificationBanner(title: "Congratulations!", subtitle: "You haved reached level \(calculated_level)", style: .success)
+            banner.show()
+            
+            currentUser?["level"] = calculated_level
+            
+            currentUser?.saveInBackground()
+        }
+        
+        
+    }
+}
+
     /*
     // MARK: - Navigation
 
