@@ -52,10 +52,10 @@ class ProfileSettingsViewController: UIViewController, UIImagePickerControllerDe
         
                     currentUser?.saveInBackground{(success, error) in
                         if success{
-                            self.dismiss(animated: true, completion: nil)
+                            _ = self.navigationController?.popViewController(animated: true)
                         }
                         else{
-                            print("Error")
+                            print("Error saving settings")
                         }
                     }
                 }

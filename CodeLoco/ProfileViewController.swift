@@ -60,7 +60,6 @@ class ProfileViewController: UIViewController {
         }
     }
    
-    
     @IBAction func onLogoutBUtton(_ sender: Any) {
         PFUser.logOut()
         
