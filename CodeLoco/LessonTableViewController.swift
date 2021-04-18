@@ -1,29 +1,24 @@
 //
-//  LessonsTableViewController.swift
+//  LessonTableViewController.swift
 //  CodeLoco
 //
-//  Created by Brock Donahue on 4/10/21.
+//  Created by Brock Donahue on 4/17/21.
 //
 
 import UIKit
 
-
-class LessonsTableViewController: UITableViewController {
-    var lessons = UserDefaults.standard.array(forKey: "Lessons")
+class LessonTableViewController: UITableViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.reloadData()
-        print(lessons as Any)
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-    @IBAction func goBack(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
-    
+
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -33,26 +28,17 @@ class LessonsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        
-        return lessons?.count ?? 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "lessonBlock", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "LessonTableViewCell", for: indexPath)
 
         // Configure the cell...
 
         return cell
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let cell = sender as! UITableViewCell
-        let index = tableView.indexPath(for: cell)!
-        print(index[1])
-        let data = lessons![index[1]] as! Dictionary<String,Any>
-        let dataPasser = segue.destination as! LessonTableViewController
 
-    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

@@ -6,13 +6,23 @@
 //
 
 import UIKit
-
+import Parse
 
 class ModuleTableViewController: UITableViewController {
-
+    var modules = [PFObject]()
+    var trueIndex = 0
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let query = PFQuery(className: "Module")
+        query.limit = 10
+        query.includeKey("moduleNum")
+        query.includeKey("Lessons")
+        query.findObjectsInBackground{ (modules, errors) in
+            if modules != nil{
+                self.modules = modules!
+                self.tableView.reloadData()
+            }
+        }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -29,7 +39,7 @@ class ModuleTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 2
+        return modules.count
     }
 
 
@@ -50,7 +60,21 @@ class ModuleTableViewController: UITableViewController {
         return cell
     }
     
-    
+    @IBAction func module1Segue(_ sender: Any) {
+        let firstSender = 1
+        var index = 0
+        for module in modules{
+            if module["moduleNum"] as! Int == firstSender{
+                trueIndex = index
+            }
+            index += 1
+        }
+        self.performSegue(withIdentifier: "toLessons", sender: modules[trueIndex]["Lessons"])
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        UserDefaults.standard.set(sender, forKey: "Lessons")
+        }
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -96,4 +120,4 @@ class ModuleTableViewController: UITableViewController {
     }
     */
 
-}
+

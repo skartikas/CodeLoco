@@ -53,7 +53,7 @@ class ProfileViewController: UIViewController {
                 let imageFile = currentUser!["profile_image"] as! PFFileObject
                 let urlString = imageFile.url!
                 let url = URL(string: urlString)!
-                profileImage.af_setImage(withURL: url)
+                profileImage.af.setImage(withURL: url)
             }
             else {
                 print("USER DID NOT SET PROFILE IMAGE")
