@@ -28,8 +28,8 @@
 - [x] User logins/memory (remember where they left off)
 - [x] Main tab containing different modules of focus (introduction to coding basics, language specifics, OOP basics, big O, Sorting algos). **ADDED THREE MODULES**
 - [x] Each module has separate lessons to build up understanding (new screen once clicked)
-- [ ] Aiming for at least 3-4 modules, want each module to contain at least ~ (an hour) of content
-- [ ] Multiple choice quick checks on concepts addressed in lesson
+- [ ] **WORK IN PROGRESS, NEED MORE TIME** Aiming for at least 3-4 modules, want each module to contain at least ~ (an hour) of content
+- [ ] **WORK IN PROGRESS, NEED MORE TIME** Multiple choice quick checks on concepts addressed in lesson
 - [x] Profile tab shows progress to this point (level up maybe?), account age, adjust account credentials
 - [x] Profile settings to change picture, username and password.
 - [x] User can login, logout and stay logged in across restarts.
