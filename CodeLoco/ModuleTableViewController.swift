@@ -39,7 +39,7 @@ class ModuleTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return modules.count
+        return modules.count/3
     }
 
 
@@ -49,30 +49,67 @@ class ModuleTableViewController: UITableViewController {
         // Configure the cell...
         let moduleNumber = 3*indexPath.row
         cell.firstModule.layer.cornerRadius = 50
+        cell.firstModule.layer.borderWidth = 2
+        cell.firstModule.layer.borderColor = UIColor.white.cgColor
+        cell.firstModule.clipsToBounds = true
         cell.secondModule.layer.cornerRadius = 50
+        cell.secondModule.layer.borderColor = UIColor.white.cgColor
+        cell.secondModule.layer.borderWidth = 2
+        cell.secondModule.clipsToBounds = true
         cell.thirdModule.layer.cornerRadius = 50
+        cell.thirdModule.layer.borderWidth = 2
+        cell.thirdModule.layer.borderColor = UIColor.white.cgColor
+        cell.thirdModule.clipsToBounds = true
         let firstModuleNumber = moduleNumber + 1
         let secondModuleNumber = moduleNumber + 2
         let thirdModuleNumber = moduleNumber + 3
-        cell.firstModuleLabel.text = String(format: "%@%x", "Module ", firstModuleNumber)
-        cell.secondModuleLabel.text = String(format: "%@%x", "Module ", secondModuleNumber)
-        cell.thirdModuleLabel.text = String(format: "%@%x", "Module ", thirdModuleNumber)
+        cell.firstModule.setTitle( String(format: "%@%x", "Module ", firstModuleNumber), for: .normal)
+        cell.secondModule.setTitle( String(format: "%@%x", "Module ", secondModuleNumber), for:.normal)
+        cell.thirdModule.setTitle( String(format: "%@%x", "Module ", thirdModuleNumber), for:.normal)
+        
         return cell
     }
     
-    @IBAction func module1Segue(_ sender: Any) {
-        let firstSender = 1
+    
+    @IBAction func firstModule(_ sender: UIButton) {
+       let buttonTitle = sender.title(for: .normal)!
+        let moduleNumber = buttonTitle.suffix(1)
         var index = 0
         for module in modules{
-            if module["moduleNum"] as! Int == firstSender{
+            if module["moduleNum"] as? Int == Int(moduleNumber){
                 trueIndex = index
             }
             index += 1
         }
-        self.performSegue(withIdentifier: "toLessons", sender: modules[trueIndex]["Lessons"])
+        print(trueIndex)
     }
+    @IBAction func secondModule(_ sender: UIButton) {
+        let buttonTitle = sender.title(for: .normal)!
+         let moduleNumber = buttonTitle.suffix(1)
+         var index = 0
+         for module in modules{
+             if module["moduleNum"] as? Int == Int(moduleNumber){
+                 trueIndex = index
+             }
+             index += 1
+         }
+         print(trueIndex)
+     }
+    @IBAction func thirdModule(_ sender: UIButton) {
+        let buttonTitle = sender.title(for: .normal)!
+         let moduleNumber = buttonTitle.suffix(1)
+         var index = 0
+         for module in modules{
+             if module["moduleNum"] as? Int == Int(moduleNumber){
+                 trueIndex = index
+             }
+             index += 1
+         }
+         print(trueIndex)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        UserDefaults.standard.set(sender, forKey: "Lessons")
+        
         }
     }
     /*

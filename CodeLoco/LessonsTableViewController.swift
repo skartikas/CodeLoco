@@ -48,10 +48,8 @@ class LessonsTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let cell = sender as! UITableViewCell
         let index = tableView.indexPath(for: cell)!
-        print(index[1])
         let data = lessons![index[1]] as! Dictionary<String,Any>
-        let dataPasser = segue.destination as! LessonTableViewController
-
+        UserDefaults.standard.set(data, forKey: "currentLesson")
     }
     /*
     // Override to support conditional editing of the table view.

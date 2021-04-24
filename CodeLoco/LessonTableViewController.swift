@@ -8,10 +8,10 @@
 import UIKit
 
 class LessonTableViewController: UITableViewController {
-    
+    var lessonData = UserDefaults.standard.dictionary(forKey: "currentLesson")
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -32,8 +32,10 @@ class LessonTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "LessonTableViewCell", for: indexPath)
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "LessonTableViewCell", for: indexPath) as! LessonTableViewCell
+        cell.titleLabel.text = lessonData?["Title"] as? String ?? "Oops"
+        cell.lessonLabel.text = lessonData?["Entry1"] as? String ?? "Oops"
+        
         // Configure the cell...
 
         return cell

@@ -14,10 +14,7 @@ class ModuleTableViewCell: UITableViewCell {
     @IBOutlet weak var secondModule: UIButton!
     
     @IBOutlet weak var thirdModule: UIButton!
-    @IBOutlet weak var firstModuleLabel: UILabel!
-    @IBOutlet weak var secondModuleLabel: UILabel!
     
-    @IBOutlet weak var thirdModuleLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
