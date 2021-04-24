@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class LessonTableViewController: UITableViewController {
     var lessonData = Dictionary<String,Any>()
@@ -28,14 +29,18 @@ class LessonTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return 20
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "LessonTableViewCell", for: indexPath) as! LessonTableViewCell
         cell.titleLabel.text = lessonData["Title"] as? String ?? "Oops"
         cell.lessonLabel.text = lessonData["Entry1"] as? String ?? "Oops"
+        let urlString = lessonData["Pic1"] as! String
         
+        let imageUrl = URL(string: urlString)!
+        
+        cell.lessonPic.af_setImage(withURL: imageUrl)
         // Configure the cell...
 
         return cell

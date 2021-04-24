@@ -485,43 +485,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LessonTableViewCell" rowHeight="668" id="HgI-kL-SaG" customClass="LessonTableViewCell" customModule="CodeLoco" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="668"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LessonTableViewCell" rowHeight="592" id="HgI-kL-SaG" customClass="LessonTableViewCell" customModule="CodeLoco" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="592"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HgI-kL-SaG" id="A0g-iC-wHL" customClass="LessonTableViewCell" customModule="CodeLoco" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="668"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="592"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3FU-Vn-9OS">
-                                            <rect key="frame" x="40" y="77.5" width="334" height="20.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3FU-Vn-9OS">
+                                            <rect key="frame" x="187" y="92" width="41.5" height="200"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kL7-85-fWs">
-                                            <rect key="frame" x="40" y="31" width="334" height="26.5"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kbg-Yq-N5V">
+                                            <rect key="frame" x="40" y="421" width="334" height="140"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="140" id="dxg-iH-cwq"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kL7-85-fWs">
+                                            <rect key="frame" x="181" y="27" width="52" height="27"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kbg-Yq-N5V">
-                                            <rect key="frame" x="40" y="497" width="334" height="128"/>
-                                        </imageView>
                                     </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="trailingMargin" secondItem="3FU-Vn-9OS" secondAttribute="trailing" constant="20" id="7QG-87-sOI"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="kbg-Yq-N5V" secondAttribute="trailing" constant="20" id="8CQ-OB-Khd"/>
-                                        <constraint firstItem="kbg-Yq-N5V" firstAttribute="leading" secondItem="A0g-iC-wHL" secondAttribute="leadingMargin" constant="20" id="Brb-Y9-1Db"/>
-                                        <constraint firstItem="3FU-Vn-9OS" firstAttribute="leading" secondItem="A0g-iC-wHL" secondAttribute="leadingMargin" constant="20" id="Nae-pL-ZqW"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="kbg-Yq-N5V" secondAttribute="bottom" constant="20" id="OmP-Fl-Owy"/>
-                                        <constraint firstItem="3FU-Vn-9OS" firstAttribute="top" secondItem="kL7-85-fWs" secondAttribute="bottom" constant="20" id="Ptv-Z6-X0y"/>
-                                        <constraint firstItem="kL7-85-fWs" firstAttribute="top" secondItem="A0g-iC-wHL" secondAttribute="topMargin" constant="20" id="Sfg-yC-oyz"/>
-                                        <constraint firstItem="kL7-85-fWs" firstAttribute="leading" secondItem="A0g-iC-wHL" secondAttribute="leadingMargin" constant="20" id="Ytb-7H-YLk"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="kL7-85-fWs" secondAttribute="trailing" constant="20" id="xHT-AU-Q2M"/>
-                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="lessonLabel" destination="3FU-Vn-9OS" id="TrJ-7u-Di0"/>
+                                    <outlet property="lessonPic" destination="kbg-Yq-N5V" id="oef-9p-aM0"/>
                                     <outlet property="titleLabel" destination="kL7-85-fWs" id="C2t-Tb-xGO"/>
                                 </connections>
                             </tableViewCell>

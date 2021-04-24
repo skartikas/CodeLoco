@@ -23,7 +23,7 @@ class LessonsViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "lessonBlock", for: indexPath) as! LessonsTableViewCell
-        cell.lessonTitle.text = lessons[indexPath.row]["Title"] as! String
+        cell.lessonTitle.text = (lessons[indexPath.row]["Title"] as! String)
         // Configure the cell...
 
         return cell
