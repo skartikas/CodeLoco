@@ -7,21 +7,16 @@
 
 import UIKit
 
-
 class LessonsTableViewController: UITableViewController {
-    var lessons = UserDefaults.standard.array(forKey: "Lessons")
+    var lessons = [Dictionary<String,Any>]()
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.reloadData()
-        print(lessons as Any)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
-    }
-    @IBAction func goBack(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
     }
     
     // MARK: - Table view data source
@@ -34,7 +29,7 @@ class LessonsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         
-        return lessons?.count ?? 0
+        return lessons.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -48,8 +43,9 @@ class LessonsTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let cell = sender as! UITableViewCell
         let index = tableView.indexPath(for: cell)!
-        let data = lessons![index[1]] as! Dictionary<String,Any>
-        UserDefaults.standard.set(data, forKey: "currentLesson")
+        let data = lessons[index[0]]
+        let lessonTableView = segue.destination as! LessonTableViewController
+        lessonTableView.lessonData = data
     }
     /*
     // Override to support conditional editing of the table view.

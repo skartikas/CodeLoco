@@ -8,7 +8,7 @@
 import UIKit
 
 class LessonTableViewController: UITableViewController {
-    var lessonData = UserDefaults.standard.dictionary(forKey: "currentLesson")
+    var lessonData = Dictionary<String,Any>()
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,8 +33,8 @@ class LessonTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "LessonTableViewCell", for: indexPath) as! LessonTableViewCell
-        cell.titleLabel.text = lessonData?["Title"] as? String ?? "Oops"
-        cell.lessonLabel.text = lessonData?["Entry1"] as? String ?? "Oops"
+        cell.titleLabel.text = lessonData["Title"] as? String ?? "Oops"
+        cell.lessonLabel.text = lessonData["Entry1"] as? String ?? "Oops"
         
         // Configure the cell...
 

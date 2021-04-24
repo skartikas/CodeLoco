@@ -81,7 +81,9 @@ class ModuleTableViewController: UITableViewController {
             }
             index += 1
         }
-        print(trueIndex)
+        let buttonPosition:CGPoint = sender.convert(CGPoint.zero, to:self.tableView)
+        print(buttonPosition)
+        performSegue(withIdentifier: "toLessons", sender: buttonPosition)
     }
     @IBAction func secondModule(_ sender: UIButton) {
         let buttonTitle = sender.title(for: .normal)!
@@ -93,7 +95,7 @@ class ModuleTableViewController: UITableViewController {
              }
              index += 1
          }
-         print(trueIndex)
+        performSegue(withIdentifier: "toLessons", sender: nil)
      }
     @IBAction func thirdModule(_ sender: UIButton) {
         let buttonTitle = sender.title(for: .normal)!
@@ -105,11 +107,13 @@ class ModuleTableViewController: UITableViewController {
              }
              index += 1
          }
-         print(trueIndex)
+        performSegue(withIdentifier: "toLessons", sender: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+        let data = modules[trueIndex]["Lessons"]
+        let lessonsViewController = segue.destination as! LessonsViewController
+        lessonsViewController.lessons = data as! [Dictionary<String,Any>]
         }
     }
     /*
