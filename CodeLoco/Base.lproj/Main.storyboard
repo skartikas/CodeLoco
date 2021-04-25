@@ -834,11 +834,11 @@
             </objects>
             <point key="canvasLocation" x="-1326" y="815"/>
         </scene>
-        <!--Social-->
+        <!--Quiz-->
         <scene sceneID="hGp-gf-qsV">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="P7v-nJ-pch" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Social" image="person.3.fill" catalog="system" selectedImage="doc.plaintext" id="4cS-mG-i6E"/>
+                    <tabBarItem key="tabBarItem" title="Quiz" image="person.3.fill" catalog="system" selectedImage="doc.plaintext" id="4cS-mG-i6E"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="0JY-Ue-bGz">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
