@@ -14,6 +14,7 @@ class ModuleTableViewController: UITableViewController {
     var trueIndex = 0
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         let query = PFQuery(className: "Module")
         query.limit = 10
         query.includeKey("Lessons")
@@ -113,7 +114,6 @@ class ModuleTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let data = modules[trueIndex]["Lessons"]
         let passedTitle = modules[trueIndex]["moduleName"] as! String
-        print(passedTitle)
         let lessonsViewController = segue.destination as! LessonsViewController
         lessonsViewController.lessons = data as! [Dictionary<String,Any>]
         lessonsViewController.titleText = passedTitle
