@@ -16,7 +16,8 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        usernameField.layer.cornerRadius = 20
+        passwordField.layer.cornerRadius = 20
         // Do any additional setup after loading the view.
     }
     
