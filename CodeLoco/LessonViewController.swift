@@ -31,13 +31,17 @@ class LessonViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "LessonTableViewCell", for: indexPath) as! LessonTableViewCell
         cell.titleLabel.text = lessonData["Title"] as? String ?? "Oops an error has occured."
-        cell.lessonLabel.text = lessonData["Entry1"] as? String ?? "Oops an error has occured."
-        let urlString = lessonData["Pic1"] as? String ?? "Oops"
+        let entryNum = indexPath.row + 1
+        let entryString = String(format: "%@%d", "Entry", entryNum)
+        let picString = String(format: "%@%d", "Pic", entryNum)
+        let captionString = String(format: "%@%d", "Caption", entryNum)
+        cell.lessonLabel.text = lessonData[entryString] as? String ?? "Oops an error has occured."
+        let urlString = lessonData[picString] as? String ?? "Oops"
         
         let imageUrl = URL(string: urlString)!
         
-        cell.lessonPic.af_setImage(withURL: imageUrl)
-        cell.picCaption.text = lessonData["Caption1"] as? String ?? "Oops, an error has occured."
+        cell.lessonPic.af.setImage(withURL: imageUrl)
+        cell.picCaption.text = lessonData[captionString] as? String ?? "Oops, an error has occured."
         // Configure the cell...
 
         return cell
