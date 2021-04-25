@@ -11,6 +11,7 @@ import Parse
 
 class LessonViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var CompletionButton: UIButton!
     @IBOutlet weak var tableView: UITableView!
     var lessonData = Dictionary<String,Any>()
     override func viewDidLoad() {
@@ -18,6 +19,9 @@ class LessonViewController: UIViewController, UITableViewDelegate, UITableViewDa
         tableView.dataSource = self
         tableView.reloadData()
         // Do any additional setup after loading the view.
+        CompletionButton.layer.cornerRadius = 10
+        CompletionButton.layer.borderWidth = 2
+        CompletionButton.layer.borderColor = UIColor.white.cgColor
     }
     func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections

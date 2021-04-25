@@ -40,7 +40,7 @@
                                 <rect key="frame" x="19" y="524" width="351" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" textContentType="password"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAo-rW-4TX">
                                 <rect key="frame" x="53" y="627" width="82" height="36"/>
@@ -556,8 +556,11 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LHm-vQ-Kuq">
-                                <rect key="frame" x="144.5" y="763" width="125" height="30"/>
-                                <state key="normal" title="Mark as Complete"/>
+                                <rect key="frame" x="120" y="763" width="174" height="30"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <state key="normal" title="Mark as Complete">
+                                    <color key="titleColor" systemColor="systemGreenColor"/>
+                                </state>
                                 <connections>
                                     <action selector="finishLesson:" destination="M91-N1-vf4" eventType="touchUpInside" id="40o-Hv-D4B"/>
                                 </connections>
@@ -568,14 +571,17 @@
                         <constraints>
                             <constraint firstItem="Ey4-wg-b6E" firstAttribute="top" secondItem="0qg-yl-bmj" secondAttribute="top" id="4V5-Db-Vj8"/>
                             <constraint firstItem="LHm-vQ-Kuq" firstAttribute="top" secondItem="Ey4-wg-b6E" secondAttribute="bottom" constant="20" id="fzh-h4-dTK"/>
+                            <constraint firstItem="88Q-6A-09n" firstAttribute="trailing" secondItem="LHm-vQ-Kuq" secondAttribute="trailing" constant="120" id="jFD-5S-UDs"/>
                             <constraint firstItem="Ey4-wg-b6E" firstAttribute="centerX" secondItem="0qg-yl-bmj" secondAttribute="centerX" id="lbp-hl-IFg"/>
                             <constraint firstItem="LHm-vQ-Kuq" firstAttribute="centerX" secondItem="0qg-yl-bmj" secondAttribute="centerX" id="pEO-Dk-leA"/>
                             <constraint firstItem="88Q-6A-09n" firstAttribute="bottom" secondItem="LHm-vQ-Kuq" secondAttribute="bottom" constant="20" id="qZQ-11-ksZ"/>
                             <constraint firstItem="Ey4-wg-b6E" firstAttribute="leading" secondItem="0qg-yl-bmj" secondAttribute="leading" id="uFG-33-OfD"/>
+                            <constraint firstItem="LHm-vQ-Kuq" firstAttribute="leading" secondItem="88Q-6A-09n" secondAttribute="leading" constant="120" id="zhb-yq-d3l"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="eyK-5h-mCk"/>
                     <connections>
+                        <outlet property="CompletionButton" destination="LHm-vQ-Kuq" id="8EL-eZ-KcV"/>
                         <outlet property="tableView" destination="Ey4-wg-b6E" id="RvD-aT-4bE"/>
                     </connections>
                 </viewController>
@@ -605,9 +611,9 @@
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2W-t1-GUW">
                                                     <rect key="frame" x="40" y="313" width="334" height="30"/>
-                                                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <state key="normal" title="Button">
-                                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="titleColor" systemColor="systemGreenColor"/>
                                                     </state>
                                                     <connections>
                                                         <action selector="firstAnswerChosen:" destination="dkP-aC-dcP" eventType="touchUpInside" id="1oA-T1-XBJ"/>
@@ -615,9 +621,9 @@
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZ4-1t-Z9Y">
                                                     <rect key="frame" x="40" y="363" width="334" height="30"/>
-                                                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <state key="normal" title="Button">
-                                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="titleColor" systemColor="systemGreenColor"/>
                                                     </state>
                                                     <connections>
                                                         <action selector="secondAnswerChosen:" destination="dkP-aC-dcP" eventType="touchUpInside" id="UHN-1O-qcw"/>
@@ -625,9 +631,9 @@
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJa-gC-TkW">
                                                     <rect key="frame" x="40" y="413" width="334" height="30"/>
-                                                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <state key="normal" title="Button">
-                                                        <color key="titleColor" red="0.003893302521" green="0.0039967326449999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <color key="titleColor" systemColor="systemGreenColor"/>
                                                     </state>
                                                     <connections>
                                                         <action selector="thirdAnswerChosen:" destination="dkP-aC-dcP" eventType="touchUpInside" id="o86-Wr-Lhk"/>
@@ -635,9 +641,9 @@
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RiD-M2-ZFr">
                                                     <rect key="frame" x="40" y="463" width="334" height="30"/>
-                                                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <state key="normal" title="Button">
-                                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <color key="titleColor" systemColor="systemGreenColor"/>
                                                     </state>
                                                     <connections>
                                                         <action selector="fourthAnswerChosen:" destination="dkP-aC-dcP" eventType="touchUpInside" id="XEH-sS-Ool"/>
@@ -749,31 +755,31 @@
                                 <rect key="frame" x="19" y="238" width="286" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" textContentType="given-name"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cmG-iW-2IR">
                                 <rect key="frame" x="19" y="313" width="286" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" textContentType="family-name"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KJC-Qt-NwK">
                                 <rect key="frame" x="19" y="391" width="286" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" textContentType="email"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NIo-uz-bRk">
                                 <rect key="frame" x="19" y="483" width="286" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" textContentType="username"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="18q-yl-B2d">
                                 <rect key="frame" x="19" y="578" width="286" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dnp-oK-fNC">
                                 <rect key="frame" x="20" y="362" width="79" height="21"/>
@@ -893,7 +899,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="uvB-KM-ChC"/>
+        <segue reference="34m-yd-Msf"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="CodeLogo" width="501" height="371"/>
@@ -906,14 +912,17 @@
         <image name="pencil" catalog="system" width="128" height="113"/>
         <image name="person.3.fill" catalog="system" width="128" height="61"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="secondarySystemFillColor">
             <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.16" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

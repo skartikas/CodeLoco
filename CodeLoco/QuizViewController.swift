@@ -29,6 +29,7 @@ class QuizViewController: UIViewController, UITableViewDelegate, UITableViewData
                 self.questionsList = questionsList!
                 self.tableView.reloadData()
             }
+        
         // Do any additional setup after loading the view.
         
     }
@@ -46,10 +47,30 @@ class QuizViewController: UIViewController, UITableViewDelegate, UITableViewData
         let answers = currentQuestion["Answers"] as! Array<String>
         let correctIndex = currentQuestion["answerIndex"] as! Int
         correct = correctIndex
+            
         cell.firstAnswer.setTitle(answers[0], for: .normal)
+        cell.firstAnswer.layer.cornerRadius = 10
+        cell.firstAnswer.layer.borderColor = UIColor.white.cgColor
+        cell.firstAnswer.layer.borderWidth = 2
+            
+        
         cell.secondAnswer.setTitle(answers[1], for: .normal)
+        cell.secondAnswer.layer.cornerRadius = 10
+            cell.secondAnswer.layer.borderColor = UIColor.white.cgColor
+        cell.secondAnswer.layer.borderWidth = 2
+            
+            
         cell.thirdAnswer.setTitle(answers[2], for: .normal)
+        cell.thirdAnswer.layer.cornerRadius = 10
+        cell.thirdAnswer.layer.borderColor = UIColor.white.cgColor
+        cell.thirdAnswer.layer.borderWidth = 2
+            
+        
         cell.fourthAnswer.setTitle(answers[3], for: .normal)
+        cell.fourthAnswer.layer.cornerRadius = 10
+        cell.fourthAnswer.layer.borderColor = UIColor.white.cgColor
+        cell.fourthAnswer.layer.borderWidth = 2
+            
         let urlString = currentQuestion["questionImage"] as! String
         let url = URL(string: urlString)!
             cell.questionImage.af.setImage(withURL: url)

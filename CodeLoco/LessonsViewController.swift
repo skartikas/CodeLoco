@@ -37,7 +37,6 @@ class LessonsViewController: UIViewController, UITableViewDelegate, UITableViewD
         let onionLayer3 = onionLayer2[currentModule]
         let onionLayer4 = onionLayer3![currentLesson] as! Int
         cell.lessonProgressBar.progress = Float(onionLayer4)
-        print(onionLayer4)
         let progressPercent = String(format: "%.0f%@", Float(onionLayer4)*100, "%" )
         cell.lessonProgressLabel.text = progressPercent
         // Configure the cell...
