@@ -33,7 +33,7 @@ class LessonsViewController: UIViewController, UITableViewDelegate, UITableViewD
         let cell = sender as! UITableViewCell
         let index = tableView.indexPath(for: cell)!
         let data = lessons[index.row]
-        let lessonTableView = segue.destination as! LessonTableViewController
+        let lessonTableView = segue.destination as! LessonViewController
         lessonTableView.lessonData = data
     }
 
