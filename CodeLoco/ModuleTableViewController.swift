@@ -9,10 +9,12 @@ import UIKit
 import Parse
 
 class ModuleTableViewController: UITableViewController {
+    let user = PFUser.current()
     var modules = [PFObject]()
     var trueIndex = 0
     override func viewDidLoad() {
         super.viewDidLoad()
+        PFUser.logOut()
         let query = PFQuery(className: "Module")
         query.limit = 10
         query.includeKey("moduleNum")

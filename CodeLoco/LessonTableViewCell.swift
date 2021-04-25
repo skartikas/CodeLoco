@@ -11,6 +11,7 @@ class LessonTableViewCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var lessonLabel: UILabel!
     @IBOutlet weak var lessonPic: UIImageView!
+    @IBOutlet weak var picCaption: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
