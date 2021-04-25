@@ -45,7 +45,6 @@ class LessonViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
     @IBAction func finishLesson(_ sender: Any) {
         let user = PFUser.current()
-        print(user!["total_points"])
         if user != nil{
             let currentModule = lessonData["ModuleAtt"] as! String
             let currentLesson = lessonData["LessonAtt"] as! String
@@ -55,7 +54,9 @@ class LessonViewController: UIViewController, UITableViewDelegate, UITableViewDa
             let onionLayer4 = onionLayer3![currentLesson] as! Int
             if onionLayer4 != 1{
                 let currentPoints = user!["total_points"] as! Int
+                let currentLevel = user!["level"] as! Int
                 user?.setValue(currentPoints + 100, forKey: "total_points")
+                user?.setValue(currentLevel + 1, forKey: "level")
                 onionLayer1[0][currentModule]![currentLesson] = 1
                 user?.setValue(onionLayer1, forKey:"ModuleProgress" )
             }

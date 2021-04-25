@@ -16,7 +16,6 @@ class ModuleTableViewController: UITableViewController {
         super.viewDidLoad()
         let query = PFQuery(className: "Module")
         query.limit = 10
-        query.includeKey("moduleNum")
         query.includeKey("Lessons")
         query.findObjectsInBackground{ (modules, errors) in
             if modules != nil{
@@ -67,6 +66,7 @@ class ModuleTableViewController: UITableViewController {
         cell.firstModule.setTitle( String(format: "%@%x", "Module ", firstModuleNumber), for: .normal)
         cell.secondModule.setTitle( String(format: "%@%x", "Module ", secondModuleNumber), for:.normal)
         cell.thirdModule.setTitle( String(format: "%@%x", "Module ", thirdModuleNumber), for:.normal)
+        cell.selectionStyle = .none
         
         return cell
     }

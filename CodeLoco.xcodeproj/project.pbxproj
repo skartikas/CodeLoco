@@ -25,6 +25,8 @@
 		E56888D52633D51100D5BEBD /* LessonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56888D42633D51100D5BEBD /* LessonsViewController.swift */; };
 		E56888DD2633D99700D5BEBD /* LessonsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56888DC2633D99700D5BEBD /* LessonsTableViewCell.swift */; };
 		E56888E82635325800D5BEBD /* LessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56888E72635325800D5BEBD /* LessonViewController.swift */; };
+		E56888F02635752400D5BEBD /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56888EF2635752400D5BEBD /* QuizViewController.swift */; };
+		E56888F52635762500D5BEBD /* QuizTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56888F42635762500D5BEBD /* QuizTableViewCell.swift */; };
 		E57DD9BD262218EF00E7A2F5 /* ModuleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57DD9BC262218EF00E7A2F5 /* ModuleTableViewController.swift */; };
 		E57DD9C2262219F900E7A2F5 /* ModuleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57DD9C1262219F900E7A2F5 /* ModuleTableViewCell.swift */; };
 		E58FE1CB262BE09300DF0C73 /* LessonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58FE1CA262BE09200DF0C73 /* LessonTableViewCell.swift */; };
@@ -77,6 +79,8 @@
 		E56888D42633D51100D5BEBD /* LessonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsViewController.swift; sourceTree = "<group>"; };
 		E56888DC2633D99700D5BEBD /* LessonsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsTableViewCell.swift; sourceTree = "<group>"; };
 		E56888E72635325800D5BEBD /* LessonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonViewController.swift; sourceTree = "<group>"; };
+		E56888EF2635752400D5BEBD /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		E56888F42635762500D5BEBD /* QuizTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizTableViewCell.swift; sourceTree = "<group>"; };
 		E57DD9BC262218EF00E7A2F5 /* ModuleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleTableViewController.swift; sourceTree = "<group>"; };
 		E57DD9C1262219F900E7A2F5 /* ModuleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleTableViewCell.swift; sourceTree = "<group>"; };
 		E58FE1CA262BE09200DF0C73 /* LessonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonTableViewCell.swift; sourceTree = "<group>"; };
@@ -140,6 +144,8 @@
 				0F4E149826192DB300BBEDE4 /* SceneDelegate.swift */,
 				E56888E72635325800D5BEBD /* LessonViewController.swift */,
 				0F4E149C26192DB300BBEDE4 /* Main.storyboard */,
+				E56888F42635762500D5BEBD /* QuizTableViewCell.swift */,
+				E56888EF2635752400D5BEBD /* QuizViewController.swift */,
 				E58FE1CA262BE09200DF0C73 /* LessonTableViewCell.swift */,
 				E56888DC2633D99700D5BEBD /* LessonsTableViewCell.swift */,
 				E57DD9C1262219F900E7A2F5 /* ModuleTableViewCell.swift */,
@@ -437,12 +443,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E56888E82635325800D5BEBD /* LessonViewController.swift in Sources */,
+				E56888F02635752400D5BEBD /* QuizViewController.swift in Sources */,
 				0F136FB9261A3360006C3A16 /* SignUpViewController.swift in Sources */,
 				0F4E14DB2619339D00BBEDE4 /* LoginViewController.swift in Sources */,
 				E56888DD2633D99700D5BEBD /* LessonsTableViewCell.swift in Sources */,
 				E56888D52633D51100D5BEBD /* LessonsViewController.swift in Sources */,
 				0F4E149726192DB300BBEDE4 /* AppDelegate.swift in Sources */,
 				536E1CCA262202AA00BFFD0C /* ProfileSettingsViewController.swift in Sources */,
+				E56888F52635762500D5BEBD /* QuizTableViewCell.swift in Sources */,
 				E57DD9C2262219F900E7A2F5 /* ModuleTableViewCell.swift in Sources */,
 				5364898C26194FAF00AB5BFF /* ProfileViewController.swift in Sources */,
 				0F4E149926192DB300BBEDE4 /* SceneDelegate.swift in Sources */,
