@@ -26,7 +26,7 @@ class LessonViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 20
+        return lessonData["NumOfEntries"] as! Int
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "LessonTableViewCell", for: indexPath) as! LessonTableViewCell
@@ -45,10 +45,21 @@ class LessonViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
     @IBAction func finishLesson(_ sender: Any) {
         let user = PFUser.current()
-        print(user)
+        print(user!["total_points"])
         if user != nil{
-            let currentPoints = user!["total_points"] as! Int
-            user!["total_points"] = currentPoints + 100
+            let currentModule = lessonData["ModuleAtt"] as! String
+            let currentLesson = lessonData["LessonAtt"] as! String
+            var onionLayer1 = user!["ModuleProgress"] as! [Dictionary<String,Dictionary<String,Any>>]
+            let onionLayer2 = onionLayer1[0]
+            let onionLayer3 = onionLayer2[currentModule]
+            let onionLayer4 = onionLayer3![currentLesson] as! Int
+            if onionLayer4 != 1{
+                let currentPoints = user!["total_points"] as! Int
+                user?.setValue(currentPoints + 100, forKey: "total_points")
+                onionLayer1[0][currentModule]![currentLesson] = 1
+                user?.setValue(onionLayer1, forKey:"ModuleProgress" )
+            }
+
         }
     }
     /*

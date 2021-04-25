@@ -14,7 +14,6 @@ class ModuleTableViewController: UITableViewController {
     var trueIndex = 0
     override func viewDidLoad() {
         super.viewDidLoad()
-        PFUser.logOut()
         let query = PFQuery(className: "Module")
         query.limit = 10
         query.includeKey("moduleNum")
@@ -84,7 +83,6 @@ class ModuleTableViewController: UITableViewController {
             index += 1
         }
         let buttonPosition:CGPoint = sender.convert(CGPoint.zero, to:self.tableView)
-        print(buttonPosition)
         performSegue(withIdentifier: "toLessons", sender: buttonPosition)
     }
     @IBAction func secondModule(_ sender: UIButton) {
@@ -114,8 +112,11 @@ class ModuleTableViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let data = modules[trueIndex]["Lessons"]
+        let passedTitle = modules[trueIndex]["moduleName"] as! String
+        print(passedTitle)
         let lessonsViewController = segue.destination as! LessonsViewController
         lessonsViewController.lessons = data as! [Dictionary<String,Any>]
+        lessonsViewController.titleText = passedTitle
         }
     }
     /*
