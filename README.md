@@ -28,7 +28,10 @@
 - [x] User logins/memory (remember where they left off)
 - [x] Main tab containing different modules of focus (introduction to coding basics, language specifics, OOP basics, big O, Sorting algos). **ADDED THREE MODULES**
 - [x] Each module has separate lessons to build up understanding (new screen once clicked)
-- [ ] **WORK IN PROGRESS, NEED MORE TIME** Aiming for at least 3-4 modules, want each module to contain at least ~ (an hour) of content
+- [ ] **WORK IN PROGRESS, NEED MORE TIME** Aiming for at least 3-4 modules, want each module to contain at least ~ (an hour) of content 
+    
+    *above and below* Definitely the most lacking portion is our actual content at this time. The structure to place the content is now there so the pathways to making the app work are there, just needs fine tuning and more content to display. Happy to say the path to bettering the app is clear, and at the very least there is a clear structure and identity for the app!
+    
 - [ ] **WORK IN PROGRESS, NEED MORE TIME** Multiple choice quick checks on concepts addressed in lesson
 - [x] Profile tab shows progress to this point (level up maybe?), account age, adjust account credentials
 - [x] Profile settings to change picture, username and password.
@@ -36,9 +39,9 @@
 
 **Optional Nice-to-have Stories**
 
-- [ ] Hackerrank-esque challenges
+- [ ] Hackerrank-esque challenges (definitely a long shot at this time)
 - [x] Achievements
-- [ ] Graphics/animations (made by us for more specifics)
+- [ ] Graphics/animations (made by us for more specifics), (Some graphics made at this time, some pictures for lessons themselves)
 - [ ] Settings in profile for different display modes dark mode, text size, etc.
 - [ ] Friends tab *much later if anything for helping grow userbase*
 
