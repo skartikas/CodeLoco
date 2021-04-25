@@ -35,6 +35,7 @@ class LessonsViewController: UIViewController, UITableViewDelegate, UITableViewD
         let onionLayer1 = user!["ModuleProgress"] as! [Dictionary<String,Dictionary<String,Any>>]
         let onionLayer2 = onionLayer1[0]
         let onionLayer3 = onionLayer2[currentModule]
+        print(onionLayer3)
         let onionLayer4 = onionLayer3![currentLesson] as! Int
         cell.lessonProgressBar.progress = Float(onionLayer4)
         print(onionLayer4)
